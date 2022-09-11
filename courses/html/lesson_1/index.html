@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ITCourses - Введение в HTML</title>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <script src="/js/jquery.js"></script>
+        <!-- Style -->
+        <style>
+            .welcome {
+                height: 150px;
+                justify-content: center;
+                background-color: #fff;
+                border-radius: 10px;
+                margin-bottom: 40px;
+            }
+
+            .w_course p {
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Loading -->
+        <section class="loading_section">
+            <div class="loading">
+                <img class="l_img" src="/img/logo_1.svg">
+                <p class="l_p">при поддержке</p>
+                <div class="l_ani">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Header -->
+        <header>
+            <div class="wrapper">
+                <div class="header">
+                    <a class="h_a" href="/"><img class="ha_img" src="/img/logo_3.svg"></a>
+                    <nav>
+                        <a href="/courses/">Курсы</a>
+                        <a href="/courses/html/">Список уроков</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- Welcome -->
+        <section>
+            <div class="wrapper_li">
+                <div class="welcome">
+                    <div class="w_course">
+                        <p>Урок 1. Введение в HTML</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content -->
+        <section>
+            <div class="wrapper_li">
+                <div class="course_content">
+                    <h2>Введение в HTML</h2>
+                    <p>По сути, HTML довольно простой язык, состоящий из элементов, которые могут быть применены к частям текста, чтобы придавать им различные значения (Это абзац? Это маркированный список? Это часть таблицы?), разделять документ на логические секции (есть ли у документа шапка? три столбца с контентом? меню навигации?) и добавлять контент на Вашу страницу, такой как фото и видео. Этот модуль расскажет вам о первых двух возможностях HTML и научит фундаментальным концепциям и синтаксису, которые вам нужно знать, чтобы понять HTML.</p>
+                    <h2>Необходимые условия</h2>
+                    <p>Чтобы начать изучение этого модуля, вам не нужны никакие знания HTML, но вы должны иметь хотя бы базовые навыки обращения с компьютером и навыки пассивного использования Веба (т.е просто смотря на него, потребляя контент). У вас должна быть базовая рабочая среда, а также понимание, как создавать и управлять файлами.</p>
+                    <span>Если вы работаете на компьютере/планшете/другом устройстве, с отсутствием возможности создания собственных файлов, вы можете испробовать примеры кода (большинство) в онлайн-редакторах кода, таких как JSBin или Thimble.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="wrapper">
+                <div class="footer">
+                    <p>Сайт был создан «NWS» - NIGHTTRAFFIC WEB-STUDIO. Все права защищены.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            // Loading
+            document.body.onload = function() {
+                setTimeout(function() {
+                    $('.loading_section').fadeOut(1000);
+                }, 1000);
+            }
+        </script>
+    </body>
+</html>

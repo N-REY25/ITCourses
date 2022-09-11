@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ITCourses - Выбор урока | HTML</title>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <script src="/js/jquery.js"></script>
+        <!-- Style -->
+        <style>
+            .welcome {
+                height: 150px;
+                justify-content: center;
+                background-color: #fff;
+                border-radius: 10px;
+                margin-bottom: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Loading -->
+        <section class="loading_section">
+            <div class="loading">
+                <img class="l_img" src="/img/logo_1.svg">
+                <p class="l_p">при поддержке</p>
+                <div class="l_ani">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Header -->
+        <header>
+            <div class="wrapper">
+                <div class="header">
+                    <a class="h_a" href="/"><img class="ha_img" src="/img/logo_3.svg"></a>
+                    <nav>
+                        <a href="/courses/">Курсы</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- Welcome -->
+        <section>
+            <div class="wrapper_li">
+                <div class="welcome">
+                    <div class="w_course">
+                        <i class="fa fa-html5" aria-hidden="true"></i>
+                        <p>HTML</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses menu -->
+        <section>
+            <div class="wrapper_li">
+                <div class="courses_menu">
+                    <a href="/courses/html/lesson_1/">Урок 1. Введение в HTML</a>
+                    <a href="/courses/html/lesson_2/">Урок 2. Начало работы с HTML</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="wrapper">
+                <div class="footer">
+                    <p>Сайт был создан «NWS» - NIGHTTRAFFIC WEB-STUDIO. Все права защищены.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            // Loading
+            document.body.onload = function() {
+                setTimeout(function() {
+                    $('.loading_section').fadeOut(1000);
+                }, 1000);
+            }
+        </script>
+    </body>
+</html>
