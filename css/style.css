@@ -28,7 +28,7 @@ p, h1, h2, h3, h4, pre, ul, ol, li {
     margin-right: 20px;
 }
 
-.wrapper_li {
+.wrapper_page {
     width: 800px;
     margin-left: 20px;
     margin-right: 20px;
@@ -244,6 +244,10 @@ nav a:hover {
     margin: 10px;
 }
 
+.w_course p {
+    font-size: 25px;
+}
+
 /* courses menu */
 .courses_menu {
     display: flex;
@@ -278,39 +282,31 @@ nav a:hover {
 }
 
 .course_content h2 {
+    margin-top: 40px;
     margin-bottom: 20px;
 }
 
-.course_content p {
+.course_content h2:nth-child(1) {
+    margin-top: 0;
     margin-bottom: 20px;
+}
+
+.course_content h2, .course_content p, .course_content ol li, .course_content ul li {
+    margin-bottom: 20px;
+}
+
+.course_content p a {
+    color: #1a6eff;
+    transition: 0.3s;
+}
+
+.course_content p a:hover {
+    opacity: 0.6;
 }
 
 .course_content img {
-    margin-bottom: 20px;
-}
-
-.course_content span {
-    font-style: italic;
-    background-color: #0085f21a;
     border-radius: 10px;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
     margin-bottom: 20px;
-}
-
-.course_content .code {
-    font-family: monospace;
-    font-style: normal;
-    font-size: 14px;
-    color: #fff;
-    background-color: #4f4f4f;border-radius: 10px;
-    padding-top: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 5px;
-    margin-right: 2.5px;
 }
 
 .course_content div {
@@ -323,12 +319,16 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-.course_content pre {
-    font-size: 15px;
+.course_content div p, .course_content div img {
+    margin: 0;
+}
+
+.course_content code {
     text-align: left;
+    white-space: pre-wrap;
+    font-size: 15px;
     color: #fff;
     background-color: #4f4f4f;
-    white-space: pre-wrap;
     border-radius: 10px;
     padding-top: 10px;
     padding-left: 20px;
@@ -337,10 +337,10 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-.course_content .pre_error {
-    font-size: 15px;
+.course_content .code_error {
     color: #fff;
-    background-color: #ff8989;border-radius: 10px;
+    background-color: #ff6969;
+    border-radius: 10px;
     padding-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -348,11 +348,25 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-.course_content ol li {
-    margin-bottom: 20px;
+.course_content .code_p {
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    margin-right: 1px;
+    margin-bottom: 0;
 }
 
-.course_content ul li {
+.course_content span {
+    background-color: #1a6eff30;
+    border-left-color: #1a6eff;
+    border-left-style: solid;
+    border-left-width: 5px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
